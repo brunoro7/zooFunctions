@@ -2,13 +2,9 @@ const { species } = require('../data/zoo_data');
 const data = require('../data/zoo_data');
 
 function getAnimalsOlderThan(animal, age) {
-  species.forEach((specie) => {
-    
-    console.log(specie.residents);
-  });
+  const cadaAnimal = species.find((specie) => specie.name === animal);
+  return cadaAnimal.residents.every((current) => current.age >= age);
 }
-getAnimalsOlderThan('penguins', 9);
-
 module.exports = getAnimalsOlderThan;
 
 // const listaEspecies = (data.species);
