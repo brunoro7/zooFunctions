@@ -14,7 +14,6 @@ function getSpeciesByIds(...ids) {
   });
   return result;
 }
-console.log(getSpeciesByIds('89be95b3-47e4-4c5b-b687-1fabf2afa274', '78460a91-f4da-4dea-a469-86fd2b8ccc84'));
 
 module.exports = getSpeciesByIds;
 // '89be95b3-47e4-4c5b-b687-1fabf2afa274'
