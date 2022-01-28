@@ -15,9 +15,4 @@ function getRelatedEmployees(managerId) {
   return listaFuncionariosManager.map((funcionarioManager) =>
     `${funcionarioManager.firstName} ${funcionarioManager.lastName}`);
 }
-console.log(getRelatedEmployees('0e7b460e-acf4-4e17-bcb3-ee472265db83'));
-
 module.exports = { isManager, getRelatedEmployees };
-
-// 'c5b83cb3-a451-49e2-ac45-ff3f54fbe7e1'
-// '9e7d4524-363c-416a-8759-8aa7e50c0992'
